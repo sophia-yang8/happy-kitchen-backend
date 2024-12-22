@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import JsonResponse
 
 from .models import Greeting
 
@@ -10,7 +11,7 @@ def index(request):
 
 
 def random_return(request):
-    return {"random_return": "This is a"}
+    return JsonResponse({"random_return": "This is a"})
 
 
 def db(request):
