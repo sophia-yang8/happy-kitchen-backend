@@ -9,6 +9,10 @@ def index(request):
     return render(request, "index.html")
 
 
+def random_return(request):
+    return {"random_return": "This is a"}
+
+
 def db(request):
     # If you encounter errors visiting the `/db/` page on the example app, check that:
     #
