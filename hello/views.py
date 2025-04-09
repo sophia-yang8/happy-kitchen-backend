@@ -11,7 +11,7 @@ def index(request):
 
 
 def random_return(request):
-    return JsonResponse({"random_return": "This is a"})
+    return JsonResponse({"random_return": "This is a random return"})
 
 
 def db(request):
