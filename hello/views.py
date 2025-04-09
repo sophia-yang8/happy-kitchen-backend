@@ -7,7 +7,7 @@ from .models import Greeting
 
 
 def index(request):
-    return render(request, "index.html")
+    return JsonResponse({"random_return": "This is a random return"})
 
 
 def random_return(request):
