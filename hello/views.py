@@ -15,6 +15,26 @@ def random_return(request):
         "price of soda": "1 dollar",
         "price of coca cola": "2 dollars"})
 
+def cake_receipe(request):
+    return JsonResponse({
+        "cake": {
+            "flour": "2 cups",
+            "sugar": "1 cup",
+            "eggs": "3",
+            "butter": "1/2 cup",
+            "milk": "1 cup",
+            "baking powder": "1 tsp",
+            "vanilla extract": "1 tsp"
+        },
+        "instructions": [
+            "Preheat the oven to 350°F (175°C).",
+            "In a bowl, mix flour, sugar, baking powder.",
+            "Add eggs, butter, milk, and vanilla extract.",
+            "Mix until smooth.",
+            "Pour into a greased cake pan.",
+            "Bake for 30-35 minutes or until golden brown."
+        ]
+    })
 
 def db(request):
     # If you encounter errors visiting the `/db/` page on the example app, check that:
